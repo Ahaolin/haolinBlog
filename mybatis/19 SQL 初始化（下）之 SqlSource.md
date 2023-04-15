@@ -281,7 +281,7 @@ public class StaticSqlSource implements SqlSource {
 
 ------
 
-下面，我们来看看下图的两段代码，胖友看看是否发现了什么规律：[![示例](http://ahaolin-public-img.oss-cn-hangzhou.aliyuncs.com/img/202201261006748.png)](http://static.iocoder.cn/images/MyBatis/2020_02_25/03.png)示例
+下面，我们来看看下图的两段代码，胖友看看是否发现了什么规律：![示例](http://ahaolin-public-img.oss-cn-hangzhou.aliyuncs.com/img/202201261006748.png)
 
 - 如果**是**动态 SQL 的情况下，则创建 DynamicSqlSource 对象。
 - 如果**非**动态 SQL 的情况下，则创建 RawSqlSource 对象。
@@ -346,7 +346,6 @@ public class DynamicSqlSource implements SqlSource {
 
 ```java
 // RawSqlSource.java
-
 public class RawSqlSource implements SqlSource {
 
     /**
@@ -1066,7 +1065,7 @@ public class PropertyParser {
 
 举例：`#{item.name}`将被替换为sql的？号占位符，item.name则是OGNL表达式，OGNL将计算item.name的值，作为sql的？号占位符的值。
 
-如果只有静态sql，`#{name}`将在解析xml文件时，完成替换为？占位符。如果有动态sql的内容，#{name}将在执行sql时，动态替换为？占位符。
+如果只有静态sql，`#{name}`将在解析xml文件时，完成替换为？占位符。如果有动态sql的内容，`#{name}`将在执行sql时，动态替换为?占位符。
 
 ```java
   public SqlSource parseScriptNode() {

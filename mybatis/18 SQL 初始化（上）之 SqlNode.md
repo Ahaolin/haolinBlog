@@ -12,7 +12,7 @@
 
 - 总结来说，`scripting` 模块，最大的作用，就是实现了 MyBatis 的**动态 SQL 语句**的功能。关于这个功能，对应文档为 [《MyBatis 文档 —— 动态 SQL》](http://www.mybatis.org/mybatis-3/zh/dynamic-sql.html) 。
 
-本文涉及的类如下图所示：[![类图](http://ahaolin-public-img.oss-cn-hangzhou.aliyuncs.com/img/202201230026229.png)](http://static.iocoder.cn/images/MyBatis/2020_02_22/02.png)类图
+本文涉及的类如下图所示：![类图](http://ahaolin-public-img.oss-cn-hangzhou.aliyuncs.com/img/202201230026229.png)
 
 - LanguageDriver
 - SqlSource
