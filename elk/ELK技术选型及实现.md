@@ -611,12 +611,12 @@ cluster.initial_master_nodes: ["localhost.localdomain"]
   >   def register(params)
   >       # 这里通过params获取的参数是在logstash文件中通过script_params传入的
   >       @message = params["message"]
-  >   	  
+  >   	    
   >   	@map = Hash.new('系统内置')
   >   	@map.store("/upload/data.json", "【系统上传接口】")
-  >   	  
+  >   	    
   >   end
-  >     
+  >       
   >   # the filter method receives an event and must return a list of events.
   >   # Dropping an event means not including it in the return array,
   >   # while creating new ones only requires you to add a new instance of
@@ -633,7 +633,7 @@ cluster.initial_master_nodes: ["localhost.localdomain"]
   >   	#event.set('for_date', (event.get('@timestamp').time.localtime + 8*60*60).strftime('%Y-%m-%d'))
   >       return [event]
   >   end
-  >     
+  >       
   >   ```
   
   
